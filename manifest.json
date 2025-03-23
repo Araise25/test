@@ -1,0 +1,57 @@
+{
+  "name": "crypto-tracker",
+  "version": "1.0.0",
+  "description": "A Streamlit application for tracking cryptocurrency prices",
+  "author": {
+    "name": "RushiChaganti",
+    "email": "your.email@example.com",
+    "github": "Araise25"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Araise25/crypto-tracker",
+    "branch": "main"
+  },
+  "dependencies": {
+    "required": [
+      "git",
+      "python3",
+      "pip"
+    ],
+    "optional": []
+  },
+  "install": {
+    "command": "pip install -r requirements.txt",
+    "post_install": "install.sh",
+    "supported_platforms": ["windows", "linux", "macos"]
+  },
+  "uninstall": {
+    "command": "rm -rf ${INSTALL_DIR}",
+    "pre_uninstall": "cleanup.sh"
+  },
+  "tags": [
+    "cryptocurrency",
+    "finance",
+    "streamlit",
+    "dashboard"
+  ],
+  "license": "MIT",
+  "documentation": {
+    "readme": "README.md",
+    "usage": "docs/usage.md"
+  },
+  "configuration": {
+    "env_variables": [
+      "CRYPTO_API_KEY"
+    ]
+  },
+  "scripts": {
+    "start": "streamlit run app.py"
+  },
+  "metadata": {
+    "created_at": "2024-03-24",
+    "last_updated": "2024-03-24",
+    "minimum_araise_version": "1.0.0",
+    "category": "finance-tools"
+  }
+}
