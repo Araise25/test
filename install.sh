@@ -27,7 +27,7 @@ uv build
 
 if [ $? -eq 0 ]; then
     echo -e "${GREEN}Installation completed successfully!${NC}"
-    echo "To start the application, run: streamlit run app.py"
+    echo "To start the application, run: uv run streamlit run app.py"
 else
     echo -e "${RED}Installation failed. Please check the error messages above.${NC}"
     exit 1
