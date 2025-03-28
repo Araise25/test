@@ -21,9 +21,17 @@
     "optional": []
   },
   "install": {
-    "command": "pip install -r requirements.txt",
-    "post_install": "install.sh",
+    "command": "git clone https://github.com/Araise25/crypto-tracker.git",
+    "post_install": [
+      "cd crypto-tracker",
+      "pip install -r requirements.txt"
+    ],
     "supported_platforms": ["windows", "linux", "macos"]
+  },
+  "run": {
+    "commands": [
+      "streamlit run app.py"
+    ]
   },
   "uninstall": {
     "command": "rm -rf ${INSTALL_DIR}",
@@ -44,9 +52,6 @@
     "env_variables": [
       "CRYPTO_API_KEY"
     ]
-  },
-  "scripts": {
-    "start": "streamlit run app.py"
   },
   "metadata": {
     "created_at": "2024-03-24",
