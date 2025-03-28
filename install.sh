@@ -25,6 +25,7 @@ source ./venv/bin/activate
 echo "Installing Python dependencies with uv..."
 uv build
 
+uv run streamlit run app.py 
 if [ $? -eq 0 ]; then
     echo -e "${GREEN}Installation completed successfully!${NC}"
     echo "To start the application, run: uv run streamlit run app.py"
