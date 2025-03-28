@@ -9,22 +9,25 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Araise25/crypto-tracker",
+    "url": "https://github.com/Araise25/test",
     "branch": "main"
   },
   "dependencies": {
     "required": [
       "git",
       "python3",
-      "pip"
+      "pip",
+      "uv"
     ],
     "optional": []
   },
   "install": {
-    "command": "git clone https://github.com/Araise25/crypto-tracker.git",
+    "command": "git clone https://github.com/Araise25/test",
     "post_install": [
-      "cd crypto-tracker",
-      "pip install -r requirements.txt"
+      "cd test",
+      "uv venv",
+      "source .venv/bin/activate",
+      "uv build"
     ],
     "supported_platforms": ["windows", "linux", "macos"]
   },
