@@ -21,7 +21,7 @@ fi
 
 # Install dependencies using uv
 echo "Installing Python dependencies with uv..."
-uv pip install
+uv build
 
 if [ $? -eq 0 ]; then
     echo -e "${GREEN}Installation completed successfully!${NC}"
