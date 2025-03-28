@@ -18,6 +18,8 @@ if ! command -v uv &> /dev/null; then
     echo -e "${RED}uv is not installed. Installing uv...${NC}"
     python3 -m pip install uv
 fi
+uv venv
+source ./venv/bin/activate
 
 # Install dependencies using uv
 echo "Installing Python dependencies with uv..."
